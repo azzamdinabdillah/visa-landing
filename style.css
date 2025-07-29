@@ -1,0 +1,725 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.font-grotesk {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+:root {
+  --Main-Colors-Sec-Sec: #0b417d;
+  --Secondary-Colors-Sec-Sec: #ffc200;
+  --black: #303030;
+}
+
+.color-primary {
+  color: var(--Main-Colors-Sec-Sec);
+}
+
+.color-secondary {
+  color: var(--Secondary-Colors-Sec-Sec);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+.background-primary {
+  background-color: var(--Main-Colors-Sec-Sec);
+}
+
+.background-secondary {
+  background-color: var(--Secondary-Colors-Sec-Sec);
+}
+
+.background-black {
+  background-color: var(--black);
+}
+
+/* Navbar Start */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .top {
+  background-color: var(--Main-Colors-Sec-Sec);
+  padding-block: 9.5px;
+}
+
+nav .top p {
+  font-size: 10px;
+}
+
+nav .bottom {
+  background-color: white;
+  padding-block: 12px;
+}
+
+nav .bottom .call {
+  padding: 8px 10px;
+  border: 0.5px solid var(--Main-Colors-Sec-Sec, var(--Main-Colors-Sec-Sec));
+  color: var(--Main-Colors-Sec-Sec);
+  font-size: 12px;
+  width: fit-content;
+}
+
+.nav-mobile {
+  padding: 15px 22px;
+  padding-bottom: 20px;
+  box-shadow: 0 -6px 64px 0 rgba(0, 103, 218, 0.3);
+  border-radius: 24px 24px 0 0;
+  border-top: 1px solid #0b417d;
+  border-right: 1px solid #0b417d;
+  border-left: 1px solid #0b417d;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: unset;
+  bottom: 0;
+  height: 79px;
+}
+
+.nav-mobile p {
+  font-size: 10px;
+  margin-bottom: 0;
+  color: var(--Main-Colors-Sec-Sec);
+}
+
+.nav-mobile img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-mobile div {
+  cursor: pointer;
+}
+
+/* Navbar End */
+
+/* Hero section start */
+
+.hero-section {
+  margin-top: 8rem;
+}
+
+.hero-section .wrapper {
+  background-image: url("/assets/images/her-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section h1 {
+  color: var(--Main-Colors-Sec-Sec);
+  font-size: 24px;
+}
+
+.hero-section p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.hero-section .rating p {
+  font-size: 12px;
+}
+
+.hero-section .review a {
+  font-size: 10px;
+}
+
+.hero-section .right-image img {
+  scale: 1.1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Hero section end */
+
+/* Most Popular Destination & find visa section start */
+.most-popular-destination .wrapper {
+  padding: 46px 0;
+}
+
+.most-popular-destination .wrapper h2 {
+  font-size: 24px;
+  color: var(--Main-Colors-Sec-Sec);
+}
+
+.most-popular-destination .tab-links p {
+  color: black;
+  font-size: 14px;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+
+.most-popular-destination .tab-links p::before {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: #4da1ff;
+}
+
+.most-popular-destination .tab-links p.active::before {
+  opacity: 1;
+}
+
+.most-popular-destination .tab-links p:hover::before {
+  opacity: 1;
+}
+
+.most-popular-destination .tab-links::-webkit-scrollbar {
+  display: none;
+}
+
+.most-popular-destination .card-destination {
+  box-shadow: 0 4.653px 39.2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.most-popular-destination .card-destination .card-body {
+  gap: 10px;
+}
+
+.most-popular-destination .card-destination .card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: black;
+}
+
+.most-popular-destination .card-destination a {
+  width: fit-content;
+  padding: 8px 38px;
+  align-self: center;
+}
+
+.most-popular-destination .card-destination .card-text {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.most-popular-destination .card-destination .card-text.visa {
+  font-size: 12px;
+  color: black;
+  font-weight: 500;
+}
+/* Most Popular Destination & find visa section end */
+
+/* find visa section start */
+.find-visa .wrapper .header p {
+  font-size: 14px;
+}
+
+.find-visa .wrapper p {
+  font-size: 16px;
+}
+
+.find-visa .nations-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.find-visa .nations {
+  font-size: 16px;
+  color: #2d3134;
+  cursor: pointer;
+}
+/* find visa section end */
+
+/* Blog section start */
+.blog .card-blog {
+  box-shadow: 0 4.653px 39.2px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.blog .card-blog .card-body {
+  gap: 10px;
+}
+
+.blog .card-blog a {
+  width: 180px;
+  padding: 8px 36px !important;
+}
+
+.blog .card-blog .card-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: black;
+}
+
+.blog .card-blog .card-text {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 15px;
+}
+
+.blog .card-blog .badge {
+  font-size: 10px;
+  width: fit-content;
+}
+
+.blog .card-blog .badge.blue {
+  color: #0095ff;
+  background-color: rgba(0, 149, 255, 0.1);
+}
+
+.blog .card-blog .badge.yellow {
+  color: #ffc200;
+  background-color: rgba(255, 194, 0, 0.1);
+}
+
+/* Blog section end */
+
+/* footer section start */
+footer {
+  margin: 48px 20px;
+  margin-bottom: 0;
+}
+
+footer .wrapper {
+  background-color: rgba(255, 194, 0, 0.1);
+}
+
+footer .fast-track {
+  background-image: url(./assets/images/bg-footer-fast-track.png);
+  background-size: cover;
+  background-position: center;
+  /* height: 100%;
+  width: 100%; */
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 2px dashed rgba(255, 194, 0, 0.8);
+}
+
+footer .fast-track .badge {
+  font-size: 10px;
+  width: fit-content;
+  background-color: rgba(11, 65, 125, 0.1);
+  padding: 5px 10px;
+}
+
+footer .fast-track h3 {
+  font-size: 20px;
+}
+
+footer .fast-track button {
+  font-size: 12px;
+  padding: 12px 20px;
+  width: fit-content;
+}
+
+footer .carousel .carousel-indicators {
+  position: static;
+  padding-bottom: 37px;
+}
+
+footer .carousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(210, 210, 210, 0.6);
+  border-radius: 100%;
+}
+
+footer .carousel .carousel-indicators button.active {
+  width: 24px;
+  background-color: var(--Main-Colors-Sec-Sec);
+  border-radius: 500px;
+}
+
+footer .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  row-gap: 32px;
+  border-bottom: 2px dashed rgba(255, 194, 0, 0.8);
+}
+
+footer .links h4 {
+  font-size: 18px;
+}
+
+footer .links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+/* footer section end */
+
+/* testimoni start */
+.testimoni .carousel-indicators {
+  position: static;
+  gap: 17px;
+}
+
+.testimoni .carousel-indicators button {
+  background-color: rgba(210, 210, 210, 0.6);
+  border-radius: 39% !important;
+  height: 8px;
+  width: 33px;
+}
+
+.testimoni .carousel-indicators button.active {
+  width: 60px;
+  border-radius: 39% !important;
+  background-color: var(--Main-Colors-Sec-Sec);
+}
+
+.testimoni .testimoni-card {
+  background-color: white;
+}
+/* testimoni end */
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) {
+  nav .top p {
+    font-size: 13px;
+  }
+
+  /* hero section start */
+  .hero-section {
+    margin-top: 10rem;
+  }
+  /* hero section end */
+
+  /* most popular destination & find visa section start */
+  .most-popular-destination .wrapper h2 {
+    font-size: 35px;
+  }
+
+  .most-popular-destination .card-destination-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* most popular destination & find visa section end */
+
+  /* find visa section start */
+  .find-visa .nations-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* find visa section end */
+
+  /* Blog section start */
+  .blog .card-blog-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog .header a {
+    font-size: 20px;
+  }
+  /* Blog section end */
+
+  /* Footer start */
+  footer .container {
+    max-width: 95% !important;
+  }
+  /* Footer end */
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 992px) {
+  nav .top p {
+    font-size: 16px;
+  }
+
+  nav .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .nav-link-wrapper {
+    gap: 20px;
+  }
+
+  nav .nav-link-wrapper button {
+    background-color: var(--Main-Colors-Sec-Sec);
+  }
+
+  nav .nav-links p {
+    position: relative;
+    cursor: pointer;
+  }
+
+  nav .nav-links p::before {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: var(--Main-Colors-Sec-Sec);
+  }
+
+  nav .nav-links:hover p::before {
+    opacity: 1;
+  }
+
+  nav .logo-brand {
+    width: 112px;
+    height: 70px;
+  }
+
+  /* Hero Section Start */
+  .hero-section .wrapper {
+    background-image: url("/assets/images/hero-bg-xl.png");
+  }
+
+  .hero-section h1.dekstop {
+    /* font-size: 64px; */
+    font-size: 50px;
+  }
+
+  .hero-section .wrapper {
+    /* padding: 51px 128px !important; */
+    padding: 30px 70px !important;
+    padding-right: 0px !important;
+  }
+
+  .hero-section .rating p {
+    font-size: 17px;
+  }
+
+  .hero-section .review a {
+    font-size: 14px;
+  }
+
+  .hero-section .star {
+    scale: 1.5;
+  }
+
+  .hero-section .review img {
+    scale: 1.5;
+  }
+
+  .hero-section .destination {
+    padding: 15px 34px;
+    padding-right: 15px;
+  }
+
+  .hero-section .destination-wrapper {
+    /* gap: 78px; */
+    gap: 20px;
+  }
+
+  .hero-section .destination p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #2d3134;
+  }
+
+  .hero-section .destination .small-p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #767676;
+  }
+  /* Hero Section End */
+
+  .sponsor {
+    margin-top: 100px;
+  }
+
+  .sponsor img {
+    max-width: 943px;
+  }
+
+  /* most popular destination & find visa section start */
+  .most-popular-destination .tab-links p {
+    font-size: 20px;
+  }
+
+  .most-popular-destination .wrapper h2 {
+    font-size: 48px;
+  }
+
+  .most-popular-destination .card-destination-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* most popular destination & find visa section end */
+
+  /* find visa section start */
+  .find-visa .wrapper .header p {
+    font-size: 20px;
+  }
+
+  .find-visa .wrapper p {
+    font-size: 20px;
+  }
+
+  .find-visa .nations-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px !important;
+  }
+  /* find visa section end */
+
+  /* Blog section start */
+
+  .blog .card-blog-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog .wrapper h2 {
+    font-size: 48px;
+  }
+
+  .blog .card-blog .card-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .blog .card-blog .card-title {
+    font-size: 20px;
+  }
+
+  .blog .card-blog .badge {
+    font-size: 14px;
+  }
+  /* Blog section end */
+
+  /* footer start */
+
+  footer .inner {
+    display: grid;
+    grid-template-columns: 1fr 495px;
+  }
+
+  footer .right {
+    padding: 28px 70px;
+    padding-right: 0;
+    border-left: 2px dashed rgba(255, 194, 0, 0.8);
+  }
+
+  footer .links a {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  footer .copyright {
+    font-size: 16px;
+  }
+
+  footer .wrapper {
+    padding: 36px 68px !important;
+  }
+
+  footer {
+    margin: 100px 20px;
+    margin-bottom: 0;
+  }
+  /* footer end */
+
+  /* Testimoni section start */
+  .testimoni .carousel-indicators button {
+    background-color: rgba(210, 210, 210, 0.6);
+    border-radius: 25% !important;
+    height: 33px;
+    width: 8px;
+  }
+
+  .testimoni {
+    background-image: url(./assets/icons/testimoni-vector.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .testimoni .carousel-indicators button.active {
+    height: 33px;
+    width: 8px;
+  }
+
+  .testimoni .inner {
+    display: grid !important;
+    grid-template-columns: 460px 1fr;
+  }
+
+  .testimoni .carousel-item p {
+    font-size: 20px;
+  }
+
+  .testimoni .testimoni-card {
+    padding: 40px !important;
+  }
+
+  .testimoni .header p{
+    font-size: 20px;
+  }
+  /* Testimoni section end */
+}
+
+/* Responsive Desktop 2 */
+@media screen and (min-width: 1400px) {
+  /* hero section start */
+  .hero-section .wrapper {
+    padding: 51px 80px !important;
+    padding-right: 0px !important;
+  }
+  .hero-section .destination {
+    border-radius: 100px !important;
+  }
+
+  .hero-section .right-image img {
+    scale: 1.4;
+  }
+  /* hero section end */
+
+  /* most popular destination & find visa section start */
+  .most-popular-destination .tab-links {
+    gap: 131px !important;
+  }
+
+  .most-popular-destination .card-destination-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* most popular destination & find visa section end */
+
+  /* find visa section start */
+  .find-visa .nations-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  /* find visa section end */
+
+  /* footer start */
+  footer .links {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .wrapper {
+    padding: 46px 88px !important;
+  }
+
+  footer .container {
+    max-width: 1461px !important;
+  }
+  /* footer end */
+}

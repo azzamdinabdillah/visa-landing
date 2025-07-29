@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white shadow-sm">
+      <div class="top px-lg-5 gap-lg-5">
+        <div
+          class="d-none d-lg-block text-white"
+          style="flex-grow: 1; visibility: hidden"
+        >
+          asdasd
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center gap-1 px-5 px-lg-0"
+          style="flex-grow: 1"
+        >
+          <img
+            src="./assets/icons/nav-sound.svg"
+            alt=""
+            style="width: 18px; height: 18px"
+          />
+          <p class="mb-0 text-white text-center fw-medium">
+            Get Your Passport in Just 24 Hours – Now Available!
+          </p>
+        </div>
+        <div class="d-none d-lg-block mx-0 px-0">
+          <div class="d-flex gap-3">
+            <div class="d-flex justify-content-center align-items-center gap-1">
+              <img src="./assets/icons/ic_round-phone_white.svg" alt="" />
+              <p class="mb-0 text-white text-center fw-medium">
+                Phone: (800-860-8610)
+              </p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-1">
+              <img src="./assets/icons/mdi_location.svg" alt="" />
+              <p class="mb-0 text-white text-center fw-medium">
+                Track My Application
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4">
+        <div class="bottom d-flex justify-content-between align-items-center">
+          <img class="logo-brand" src="./assets/icons/brand.svg" alt="" />
+          <div
+            class="d-flex d-lg-none justify-content-center align-items-center call gap-2 rounded-pill"
+          >
+            <img src="./assets/icons/ic_baseline-phone.svg" alt="" />
+            <p class="mb-0">888-888-111</p>
+          </div>
+
+          <div class="d-none d-lg-flex nav-link-wrapper">
+            <div class="d-flex gap-2 align-items-center nav-links">
+              <p class="mb-0 font-grotesk text-black">Passports</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="d-flex gap-2 align-items-center nav-links">
+              <p class="mb-0 font-grotesk text-black">Travel visas</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="d-flex gap-2 align-items-center nav-links">
+              <p class="mb-0 font-grotesk text-black">About</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="d-flex gap-2 align-items-center nav-links">
+              <p class="mb-0 font-grotesk text-black">Resourses</p>
+              <img src="./assets/icons/arrow-down.svg" alt="" />
+            </div>
+            <div class="d-flex gap-2 align-items-center nav-links">
+              <p class="mb-0 font-grotesk text-black">Contact</p>
+            </div>
+            <button class="btn btn-primary px-4 py-2 rounded-pill fw-medium">
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav
+      class="d-md-none nav-mobile d-flex justify-content-between align-items-center"
+    >
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <img src="./assets/icons/nav-mobile-1.svg" alt="" />
+        <p>Home</p>
+      </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <img src="./assets/icons/nav-mobile-2.svg" alt="" />
+        <p>Passports</p>
+      </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <img src="./assets/icons/nav-mobile-3.svg" alt="" />
+        <p>Visas</p>
+      </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <img src="./assets/icons/nav-mobile-4.svg" alt="" />
+        <p>Resources</p>
+      </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-2"
+      >
+        <img src="./assets/icons/nav-mobile-5.svg" alt="" />
+        <p>More</p>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container px-4">
+        <div
+          class="wrapper w-full rounded-5 rounded-lg-3 h-100 py-4 mb-4 row px-0 mx-0"
+          style="gap: 40px"
+        >
+          <div
+            class="col-12 col-lg-6 mx-0 px-0 d-flex flex-column align-items-center align-items-lg-start"
+            style="gap: 25px"
+          >
+            <div class="d-flex gap-2 d-lg-none">
+              <div
+                class="rounded-pill border px-2 py-1"
+                style="
+                  font-size: 9px;
+                  border-color: rgba(11, 65, 125, 0.5);
+                  background-color: rgba(0, 121, 255, 0.03);
+                  color: #0b417d;
+                "
+              >
+                <b>From $199+</b> Government fee
+              </div>
+              <div
+                class="rounded-pill border px-2 py-1"
+                style="
+                  font-size: 9px;
+                  border-color: rgba(11, 65, 125, 0.5);
+                  background-color: rgba(0, 121, 255, 0.03);
+                  color: #0b417d;
+                "
+              >
+                <b>3-4 Business Days</b> with Fast Delivery
+              </div>
+            </div>
+
+            <h1 class="fw-bold text-center px-2 mb-0 d-lg-none">
+              Get Your Visa Fast Only $89
+            </h1>
+            <h1 class="dekstop d-none d-lg-block fw-bold mb-0">
+              Expedited Passports Made Simple, <br class="d-none d-xl-block" />
+              <span class="color-secondary">Guaranteed</span>
+            </h1>
+
+            <p class="text-center px-3 mb-0 d-lg-none">
+              Our visa consultant expedites your application by liaising
+              directly with foreign consulates for swift and secure processing
+              (*Excludes Consular Fees).
+            </p>
+
+            <p class="mb-0 d-none d-lg-block" style="font-size: 20px">
+              We simplify the passport process so you don’t have to worry. No
+              forms confusion, no errors. Just answer a few questions and you’re
+              done — in under 5 minutes. Fast. Trusted. Guaranteed.
+            </p>
+
+            <button
+              class="bg-primary d-lg-none py-1 pe-1 rounded-pill btn text-white gap-2 d-flex justify-content-center align-items-center"
+              style="
+                width: fit-content;
+                background-color: #0b417d !important;
+                padding-left: 20px;
+              "
+            >
+              <p
+                class="text-white fw-medium w-full mb-0"
+                style="font-size: 12px"
+              >
+                Get started Your Application
+              </p>
+
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.632812"
+                  y="0.384766"
+                  width="29.2308"
+                  height="29.2308"
+                  rx="14.6154"
+                  fill="white"
+                />
+                <path
+                  d="M10.8632 19.3841L19.2342 11.0132M19.6328 16.9924L19.6328 10.6146L13.2549 10.6146"
+                  stroke="#0B417D"
+                  stroke-width="1.82692"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="d-flex d-lg-none gap-2 align-items-center">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2001_41)">
+                  <path
+                    d="M13.36 8.20311C12.8913 10.5469 11.1241 12.7537 8.64442 13.2469C7.43503 13.4877 6.18049 13.3409 5.05942 12.8272C3.93835 12.3136 3.00791 11.4594 2.40057 10.3862C1.79323 9.31296 1.53997 8.0755 1.67683 6.84999C1.8137 5.62447 2.33372 4.47338 3.16286 3.56061C4.86348 1.68748 7.73504 1.17186 10.0788 2.10936"
+                    stroke="#0B417D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M5.39062 7.26562L7.73438 9.60938L13.3594 3.51562"
+                    stroke="#0B417D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2001_41">
+                    <rect width="15" height="15" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <p class="mb-0 text-black" style="font-size: 12px">
+                High approval rate on the first try
+              </p>
+            </div>
+
+            <div class="d-flex flex-column gap-2 rating">
+              <div class="d-flex gap-2 align-items-center gap-lg-4">
+                <p class="mb-0 fw-medium color-primary">Excellent</p>
+
+                <svg
+                  class="star"
+                  width="69"
+                  height="13"
+                  viewBox="0 0 69 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="11.9312"
+                    height="11.9312"
+                    transform="translate(0.34668 0.716339)"
+                    fill="#00B67A"
+                  />
+                  <path
+                    d="M8.20013 8.3703L8.99193 10.8079L6.31175 8.85984L8.20013 8.3703ZM10.6489 5.70928H7.3353L6.31211 2.55618L5.2853 5.71L1.97168 5.70566L4.65512 7.65696L3.62831 10.8075L6.31175 8.85984L7.96874 7.65696L10.6489 5.70928Z"
+                    fill="white"
+                  />
+                  <rect
+                    width="11.9312"
+                    height="11.9312"
+                    transform="translate(14.4473 0.716339)"
+                    fill="#00B67A"
+                  />
+                  <path
+                    d="M22.3007 8.3703L23.0925 10.8079L20.4123 8.85984L22.3007 8.3703ZM24.7495 5.70928H21.4359L20.4127 2.55618L19.3859 5.71L16.0723 5.70566L18.7557 7.65696L17.7289 10.8075L20.4123 8.85984L22.0693 7.65696L24.7495 5.70928Z"
+                    fill="white"
+                  />
+                  <rect
+                    width="11.9312"
+                    height="11.9312"
+                    transform="translate(28.5476 0.716339)"
+                    fill="#00B67A"
+                  />
+                  <path
+                    d="M36.4008 8.3702L37.1926 10.8078L34.5124 8.85975L36.4008 8.3702ZM38.8496 5.70918H35.536L34.5128 2.55609L33.486 5.70991L30.1724 5.70557L32.8558 7.65686L31.829 10.8074L34.5124 8.85975L36.1694 7.65686L38.8496 5.70918Z"
+                    fill="white"
+                  />
+                  <rect
+                    width="11.9312"
+                    height="11.9312"
+                    transform="translate(42.6482 0.716339)"
+                    fill="#00B67A"
+                  />
+                  <path
+                    d="M50.5016 8.3703L51.2934 10.8079L48.6133 8.85984L50.5016 8.3703ZM52.9504 5.70928H49.6368L48.6136 2.55618L47.5868 5.71L44.2732 5.70566L46.9566 7.65696L45.9298 10.8075L48.6133 8.85984L50.2703 7.65696L52.9504 5.70928Z"
+                    fill="white"
+                  />
+                  <rect
+                    width="11.9312"
+                    height="11.9312"
+                    transform="translate(56.7488 0.716339)"
+                    fill="#00B67A"
+                  />
+                  <path
+                    d="M64.6081 8.3703L65.3999 10.8079L62.7197 8.85984L64.6081 8.3703ZM67.0569 5.70928H63.7433L62.7201 2.55618L61.6933 5.71L58.3796 5.70566L61.0631 7.65696L60.0363 10.8075L62.7197 8.85984L64.3767 7.65696L67.0569 5.70928Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
+              <div class="d-flex gap-2 align-items-center review gap-lg-4">
+                <a class="fw-bold underline mb-0 color-black">11,484 reviews</a>
+                <img src="./assets/icons/trust-pilot.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="d-none d-lg-block bg-white rounded-3 w-100 destination">
+              <div
+                class="d-flex flex-wrap flex-xl-nowrap justify-content-between align-items-center destination-wrapper"
+              >
+                <div class="d-flex align-items-center gap-3 w-100">
+                  <div class="d-flex align-items-center gap-3 w-100">
+                    <img src="./assets/icons/location-blue.svg" alt="" />
+                    <div>
+                      <p>I’m a citizen of</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="small-p">United States</p>
+                        <img src="./assets/icons/arrow-down-2.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="background-primary d-none d-xl-block"
+                    style="height: 28px; width: 1px"
+                  ></div>
+
+                  <div class="d-flex align-items-center gap-3 w-100">
+                    <img src="./assets/icons/plane-blue.svg" alt="" />
+                    <div>
+                      <p>I’m Traveling to</p>
+                      <div class="d-flex align-items-center gap-1">
+                        <p class="small-p">select country</p>
+                        <img src="./assets/icons/arrow-down-2.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary shadow-none border-0 px-4 py-2 rounded-pill fw-medium background-secondary"
+                  style="white-space: nowrap"
+                >
+                  Get My Visa
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-5 mx-0 px-0 right-image">
+            <img src="./assets/images/hero-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div
+          class="d-flex justify-content-center align-items-center sponsor d-flex justify-content-center align-items-center w-100 py-3"
+        >
+          <img src="./assets/images/sponsor.png" alt="" class="w-100 h-100" />
+        </div>
+      </div>
+    </section>
+
+    <section class="most-popular-destination">
+      <div class="container">
+        <div class="wrapper d-flex flex-column gap-4 gap-lg-5 px-3">
+          <h2 class="text-center fw-bold">
+            Most Popular <span class="color-secondary">Destinations</span>
+          </h2>
+
+          <div
+            class="d-flex tab-links gap-5 overflow-auto justify-content-md-center"
+          >
+            <p class="active">Most Popular</p>
+            <p>On Arrival</p>
+            <p>Travel Visa</p>
+            <p>Work Visa</p>
+            <p>Business Visa</p>
+          </div>
+          <div
+            class="d-flex flex-wrap justify-content-center align-items-center gap-4 card-destination-wrapper"
+          >
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+            <div
+              class="card w-100 bg-white rounded-5 card-destination border-0"
+            >
+              <img
+                src="./assets/images/destination-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">India</h5>
+                <p class="card-text">Within 3-5 Days</p>
+                <div class="card-text d-flex align-items-center gap-1 visa">
+                  <img src="./assets/icons/visa.svg" alt="" />
+                  <p class="mb-0">Visa Type: Tourist</p>
+                </div>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary"
+                  >Get Visa</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary px-4 py-3 rounded-pill fw-medium text-white background-primary mx-auto"
+            style="width: fit-content"
+          >
+            View All
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="most-popular-destination find-visa position-relative">
+      <img
+        src="./assets/icons/right-plane.svg"
+        alt=""
+        class="position-absolute end-0"
+        style="top: -25%"
+      />
+      <div class="container">
+        <div class="wrapper d-flex flex-column gap-4 gap-lg-5 px-3">
+          <div class="d-flex flex-column gap-2 header">
+            <h2 class="text-center fw-bold">
+              Find Visa Requirements by Country
+            </h2>
+            <p class="text-center color-primary">
+              Explore visa requirements by selecting a country from the options
+              below.
+            </p>
+          </div>
+
+          <div
+            class="d-flex tab-links gap-5 overflow-auto justify-content-md-center"
+          >
+            <p class="active">Europe</p>
+            <p>Asia</p>
+            <p>North America</p>
+            <p>South America</p>
+            <p>Africa</p>
+          </div>
+          <div
+            class="justify-content-between align-items-center gap-4 nations-wrapper"
+          >
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+            <div class="d-flex gap-3 align-items-center nations">
+              <img src="./assets/icons/nation-1.svg" alt="" />
+              <p class="mb-0 fw-medium text-capitalize">austria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="most-popular-destination testimoni position-relative mt-lg-4"
+    >
+      <img
+        src="./assets/icons/left-place.svg"
+        alt=""
+        class="position-absolute bottom-0 start-0"
+      />
+      <div class="container">
+        <div class="wrapper d-flex flex-column gap-4 gap-lg-3 px-3">
+          <div class="d-flex flex-column gap-2 header">
+            <h2 class="text-center fw-bold">
+              What <span class="color-secondary">People</span> are Saying
+            </h2>
+            <p class="text-center color-primary">
+              Verified Reviews from Real Customers
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3 inner">
+            <img
+              src="./assets/images/testimoni.png"
+              alt=""
+              class="w-100 h-100 px-4"
+            />
+
+            <div
+              id="carouselExampleIndicators-3"
+              class="carousel slide d-lg-flex align-items-lg-center"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators flex-lg-column mx-lg-5 ms-lg-3">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators-3"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators-3"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators-3"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div
+                    class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
+                  >
+                    <p>
+                      I had a complicated situation where I was moving from city
+                      to city. I received my passport at my hotel a few hours
+                      before getting on my next flight. Patty Henriquez made it
+                      happen for me. On top of that She was kind to me through
+                      my entire chaotic request. Patty is the best!
+                    </p>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="top d-flex gap-3 flex-column">
+                        <div class="d-flex gap-1 flex-column">
+                          <p class="mb-0">Excellent</p>
+                          <svg
+                            class="star"
+                            width="69"
+                            height="13"
+                            viewBox="0 0 69 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(0.34668 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M8.20013 8.3703L8.99193 10.8079L6.31175 8.85984L8.20013 8.3703ZM10.6489 5.70928H7.3353L6.31211 2.55618L5.2853 5.71L1.97168 5.70566L4.65512 7.65696L3.62831 10.8075L6.31175 8.85984L7.96874 7.65696L10.6489 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(14.4473 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M22.3007 8.3703L23.0925 10.8079L20.4123 8.85984L22.3007 8.3703ZM24.7495 5.70928H21.4359L20.4127 2.55618L19.3859 5.71L16.0723 5.70566L18.7557 7.65696L17.7289 10.8075L20.4123 8.85984L22.0693 7.65696L24.7495 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(28.5476 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M36.4008 8.3702L37.1926 10.8078L34.5124 8.85975L36.4008 8.3702ZM38.8496 5.70918H35.536L34.5128 2.55609L33.486 5.70991L30.1724 5.70557L32.8558 7.65686L31.829 10.8074L34.5124 8.85975L36.1694 7.65686L38.8496 5.70918Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(42.6482 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M50.5016 8.3703L51.2934 10.8079L48.6133 8.85984L50.5016 8.3703ZM52.9504 5.70928H49.6368L48.6136 2.55618L47.5868 5.71L44.2732 5.70566L46.9566 7.65696L45.9298 10.8075L48.6133 8.85984L50.2703 7.65696L52.9504 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(56.7488 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M64.6081 8.3703L65.3999 10.8079L62.7197 8.85984L64.6081 8.3703ZM67.0569 5.70928H63.7433L62.7201 2.55618L61.6933 5.71L58.3796 5.70566L61.0631 7.65696L60.0363 10.8075L62.7197 8.85984L64.3767 7.65696L67.0569 5.70928Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+
+                        <img src="./assets/icons/trust-pilot.svg" alt="" />
+                      </div>
+
+                      <div class="d-flex flex-column gap-2 align-items-end">
+                        <p class="fw-medium mb-0">Stephen Ferrera-Grand</p>
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="./assets/icons/tick.svg" alt="" />
+                          <p class="mb-0" style="color: rgba(0, 0, 0, 0.8)">
+                            Verified
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsum officia qui rem dicta perferendis delectus! Porro
+                      nemo, excepturi eius illum officia omnis obcaecati cum,
+                      maxime at explicabo assumenda. Eaque eos rem quae fugit
+                      laborum sunt praesentium architecto consectetur! Maiores,
+                      nesciunt.
+                    </p>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="top d-flex gap-3 flex-column">
+                        <div class="d-flex gap-1 flex-column">
+                          <p class="mb-0">Excellent</p>
+                          <svg
+                            class="star"
+                            width="69"
+                            height="13"
+                            viewBox="0 0 69 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(0.34668 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M8.20013 8.3703L8.99193 10.8079L6.31175 8.85984L8.20013 8.3703ZM10.6489 5.70928H7.3353L6.31211 2.55618L5.2853 5.71L1.97168 5.70566L4.65512 7.65696L3.62831 10.8075L6.31175 8.85984L7.96874 7.65696L10.6489 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(14.4473 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M22.3007 8.3703L23.0925 10.8079L20.4123 8.85984L22.3007 8.3703ZM24.7495 5.70928H21.4359L20.4127 2.55618L19.3859 5.71L16.0723 5.70566L18.7557 7.65696L17.7289 10.8075L20.4123 8.85984L22.0693 7.65696L24.7495 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(28.5476 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M36.4008 8.3702L37.1926 10.8078L34.5124 8.85975L36.4008 8.3702ZM38.8496 5.70918H35.536L34.5128 2.55609L33.486 5.70991L30.1724 5.70557L32.8558 7.65686L31.829 10.8074L34.5124 8.85975L36.1694 7.65686L38.8496 5.70918Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(42.6482 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M50.5016 8.3703L51.2934 10.8079L48.6133 8.85984L50.5016 8.3703ZM52.9504 5.70928H49.6368L48.6136 2.55618L47.5868 5.71L44.2732 5.70566L46.9566 7.65696L45.9298 10.8075L48.6133 8.85984L50.2703 7.65696L52.9504 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(56.7488 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M64.6081 8.3703L65.3999 10.8079L62.7197 8.85984L64.6081 8.3703ZM67.0569 5.70928H63.7433L62.7201 2.55618L61.6933 5.71L58.3796 5.70566L61.0631 7.65696L60.0363 10.8075L62.7197 8.85984L64.3767 7.65696L67.0569 5.70928Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+
+                        <img src="./assets/icons/trust-pilot.svg" alt="" />
+                      </div>
+
+                      <div class="d-flex flex-column gap-2 align-items-end">
+                        <p class="fw-medium mb-0">Stephen Ferrera-Grand</p>
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="./assets/icons/tick.svg" alt="" />
+                          <p class="mb-0" style="color: rgba(0, 0, 0, 0.8)">
+                            Verified
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div
+                    class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
+                  >
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Id officiis nisi impedit cum tenetur magnam! Aspernatur,
+                      maiores! Aut unde earum assumenda rem, laborum explicabo
+                      cum aliquid magnam pariatur harum qui veritatis commodi
+                      culpa reiciendis vel, sapiente vero asperiores neque quis.
+                      Voluptatibus at eaque quisquam eius!
+                    </p>
+
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="top d-flex gap-3 flex-column">
+                        <div class="d-flex gap-1 flex-column">
+                          <p class="mb-0">Excellent</p>
+                          <svg
+                            class="star"
+                            width="69"
+                            height="13"
+                            viewBox="0 0 69 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(0.34668 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M8.20013 8.3703L8.99193 10.8079L6.31175 8.85984L8.20013 8.3703ZM10.6489 5.70928H7.3353L6.31211 2.55618L5.2853 5.71L1.97168 5.70566L4.65512 7.65696L3.62831 10.8075L6.31175 8.85984L7.96874 7.65696L10.6489 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(14.4473 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M22.3007 8.3703L23.0925 10.8079L20.4123 8.85984L22.3007 8.3703ZM24.7495 5.70928H21.4359L20.4127 2.55618L19.3859 5.71L16.0723 5.70566L18.7557 7.65696L17.7289 10.8075L20.4123 8.85984L22.0693 7.65696L24.7495 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(28.5476 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M36.4008 8.3702L37.1926 10.8078L34.5124 8.85975L36.4008 8.3702ZM38.8496 5.70918H35.536L34.5128 2.55609L33.486 5.70991L30.1724 5.70557L32.8558 7.65686L31.829 10.8074L34.5124 8.85975L36.1694 7.65686L38.8496 5.70918Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(42.6482 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M50.5016 8.3703L51.2934 10.8079L48.6133 8.85984L50.5016 8.3703ZM52.9504 5.70928H49.6368L48.6136 2.55618L47.5868 5.71L44.2732 5.70566L46.9566 7.65696L45.9298 10.8075L48.6133 8.85984L50.2703 7.65696L52.9504 5.70928Z"
+                              fill="white"
+                            />
+                            <rect
+                              width="11.9312"
+                              height="11.9312"
+                              transform="translate(56.7488 0.716339)"
+                              fill="#00B67A"
+                            />
+                            <path
+                              d="M64.6081 8.3703L65.3999 10.8079L62.7197 8.85984L64.6081 8.3703ZM67.0569 5.70928H63.7433L62.7201 2.55618L61.6933 5.71L58.3796 5.70566L61.0631 7.65696L60.0363 10.8075L62.7197 8.85984L64.3767 7.65696L67.0569 5.70928Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+
+                        <img src="./assets/icons/trust-pilot.svg" alt="" />
+                      </div>
+
+                      <div class="d-flex flex-column gap-2 align-items-end">
+                        <p class="fw-medium mb-0">Stephen Ferrera-Grand</p>
+                        <div class="d-flex align-items-center gap-3">
+                          <img src="./assets/icons/tick.svg" alt="" />
+                          <p class="mb-0" style="color: rgba(0, 0, 0, 0.8)">
+                            Verified
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <div class="wrapper d-flex flex-column gap-4 gap-lg-5 px-3 my-lg-5">
+          <div
+            class="d-flex justify-content-between align-items-center w-100 header"
+          >
+            <h2 class="text-center fw-bold">
+              See Our <span class="color-secondary">Blogs</span>
+            </h2>
+            <a
+              href="#"
+              class="d-none d-md-block fw-medium color-primary text-decoration-none"
+              >View All</a
+            >
+          </div>
+
+          <div
+            class="d-flex flex-wrap justify-content-center align-items-center gap-4 card-blog-wrapper"
+          >
+            <div class="card w-100 bg-white rounded-5 card-blog border-0">
+              <img
+                src="./assets/images/blog-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <div class="rounded-pill border px-2 py-1 badge blue">
+                  Passport
+                </div>
+                <h5 class="card-title">
+                  Do US Citizens Need A Visa For France Entry Requirements &
+                  Application Process
+                </h5>
+                <p class="card-text">
+                  Will you need a vlga to enter France? Here are the entry
+                  requirements and application
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary mt-3 mt-lg-5 mx-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="card w-100 bg-white rounded-5 card-blog border-0">
+              <img
+                src="./assets/images/blog-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <div class="rounded-pill border px-2 py-1 badge yellow">
+                  Visa
+                </div>
+                <h5 class="card-title">
+                  Do US Citizens Need A Visa For France Entry Requirements &
+                  Application Process
+                </h5>
+                <p class="card-text">
+                  Will you need a vlga to enter France? Here are the entry
+                  requirements and application
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary mt-3 mt-lg-5 mx-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="card w-100 bg-white rounded-5 card-blog border-0">
+              <img
+                src="./assets/images/blog-1.png"
+                class="card-img-top"
+                alt="destination image"
+              />
+              <div class="card-body d-flex flex-column">
+                <div class="rounded-pill border px-2 py-1 badge blue">
+                  Passport
+                </div>
+                <h5 class="card-title">
+                  Do US Citizens Need A Visa For France Entry Requirements &
+                  Application Process
+                </h5>
+                <p class="card-text">
+                  Will you need a vlga to enter France? Here are the entry
+                  requirements and application
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary rounded-pill background-primary mt-3 mt-lg-5 mx-auto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="d-md-none fw-4 text-center fw-medium color-primary"
+            style="font-size: 20px"
+            >View All</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container mx-0 px-0 mx-md-auto">
+        <div class="wrapper rounded-top-5 p-4 w-100">
+          <div class="inner w-100">
+            <div class="d-flex flex-column flex-lg-column-reverse w-100">
+              <div class="pt-lg-4 pe-lg-4 pe-xl-5">
+                <div class="d-flex justify-content-between align-items-center">
+                  <img
+                    src="./assets/icons/brand.svg"
+                    alt=""
+                    style="width: 112px; height: 70px"
+                  />
+
+                  <div class="d-flex gap-3">
+                    <p
+                      class="color-primary d-none py-3 mb-0 d-lg-block"
+                      style="font-size: 14px"
+                    >
+                      Follow for More Updates
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="./assets/icons/faceebook.svg" alt="" />
+                      <img src="./assets/icons/twitter.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <p class="d-lg-block d-none copyright color-primary pt-5">
+                  © 2025 Passports and visas. All rights reserved.
+                </p>
+              </div>
+
+              <p
+                class="color-primary d-lg-none py-3 mb-0"
+                style="font-size: 14px"
+              >
+                Follow for More Updates
+              </p>
+
+              <div class="fast-track d-lg-none">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel-2"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          Fast-Track Your Passport and Visas Today
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          asdakjshdakjsh asdkjhaksjdhakjsdh aksjdhakjd
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          kajdskjaskd uirtoiuerituet asldlaskdla
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="links py-4">
+                <div class="d-flex flex-column gap-3">
+                  <h4>Passports</h4>
+
+                  <div class="d-flex gap-2 flex-column">
+                    <a href="">US Passports</a>
+                    <a href="">Passport Renewal</a>
+                    <a href="">New Passport</a>
+                    <a href="">Child Passport</a>
+                    <a href="">Second Passport</a>
+                    <a href="">Name Change</a>
+                    <a href="">Lost Passport</a>
+                    <a href="">Local Passport Info</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+                  <h4>Travel Visas</h4>
+
+                  <div class="d-flex gap-2 flex-column">
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                    <a href="">
+                      <img src="./assets/icons/footer-nation.svg" alt="" />
+                      China Visa
+                    </a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+                  <h4>Company</h4>
+
+                  <div class="d-flex gap-2 flex-column">
+                    <a href="">About</a>
+                    <a href="">Corporate Solutions</a>
+                    <a href="">How It Works</a>
+                    <a href="">Customers Reviews</a>
+                    <a href="">Contact</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+                  <h4>Resources</h4>
+
+                  <div class="d-flex gap-2 flex-column">
+                    <a href="">Travel Blog</a>
+                    <a href="">Recourse Center</a>
+                  </div>
+                </div>
+              </div>
+
+              <p class="d-lg-none copyright color-primary text-center py-4">
+                © 2025 Passports and visas. All rights reserved.
+              </p>
+            </div>
+
+            <div class="right">
+              <div class="fast-track d-none d-lg-block w-100">
+                <div
+                  id="carouselExampleIndicators-2"
+                  class="carousel slide w-100"
+                  data-bs-ride="carousel-3"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          Fast-Track Your Passport and Visas Today
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          asdakjshdakjsh asdkjhaksjdhakjsdh aksjdhakjd
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="p-4 d-flex flex-column gap-3">
+                        <div
+                          class="rounded-pill border badge blue color-primary"
+                        >
+                          Passport
+                        </div>
+
+                        <h3 class="fw-medium color-primary">
+                          kajdskjaskd uirtoiuerituet asldlaskdla
+                        </h3>
+
+                        <button
+                          class="btn btn-primary rounded-pill d-flex align-items-center gap-2 background-primary"
+                        >
+                          Get Started Your Application
+                          <img
+                            src="./assets/icons/fast-track-arrow.svg"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators-2"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators-2"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators-2"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <section style="height: 500px"></section> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
