@@ -33,7 +33,7 @@
 }
 
 .background-black {
-  background-color: var(--black);
+  background-color: var(--black) !important;
 }
 
 /* Navbar Start */
@@ -235,6 +235,11 @@ nav .bottom .call {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.find-visa .nations-wrapper img {
+  width: 38px;
+  height: 38px;
+}
+
 .find-visa .nations {
   font-size: 16px;
   color: #2d3134;
@@ -329,7 +334,8 @@ footer .fast-track button {
 
 footer .carousel .carousel-indicators {
   position: static;
-  padding-bottom: 37px;
+  padding-bottom: 47px;
+  padding-top: 20px;
 }
 
 footer .carousel .carousel-indicators button {
@@ -416,6 +422,13 @@ footer .copyright {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .most-popular-destination .card-destination .card-img-top {
+    height: 288px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 30px;
+  }
   /* most popular destination & find visa section end */
 
   /* find visa section start */
@@ -428,6 +441,12 @@ footer .copyright {
   .blog .card-blog-wrapper {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog .card-blog-wrapper img {
+    height: 202px;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
   .blog .header a {
@@ -613,6 +632,10 @@ footer .copyright {
     grid-template-columns: 1fr 495px;
   }
 
+  footer .fast-track {
+    background-image: url(./assets/images/bg-footer-fast-track-dekstop.png);
+  }
+
   footer .right {
     padding: 28px 70px;
     padding-right: 0;
@@ -671,7 +694,7 @@ footer .copyright {
     padding: 40px !important;
   }
 
-  .testimoni .header p{
+  .testimoni .header p {
     font-size: 20px;
   }
   /* Testimoni section end */
@@ -691,6 +714,19 @@ footer .copyright {
   .hero-section .right-image img {
     scale: 1.4;
   }
+
+  .hero-section .divider {
+    translate: -1rem 0;
+  }
+
+  .hero-section .destination {
+    padding: 8px 34px;
+    padding-right: 8px;
+  }
+
+  .hero-section .destination button {
+    padding: 16px 20px !important;
+  }
   /* hero section end */
 
   /* most popular destination & find visa section start */
@@ -709,6 +745,12 @@ footer .copyright {
   }
   /* find visa section end */
 
+  /* blog section start */
+  .blog .card-blog-wrapper img {
+    height: 220px;
+  }
+  /* blog section end */
+
   /* footer start */
   footer .links {
     grid-template-columns: repeat(4, 1fr);
@@ -720,6 +762,66 @@ footer .copyright {
 
   footer .container {
     max-width: 1461px !important;
+  }
+  /* footer end */
+}
+
+/* Responsive Desktop 3 */
+@media screen and (min-width: 1920px) {
+  /* hero section start */
+  .hero-section .container {
+    max-width: 1796px;
+  }
+
+  .hero-section .wrapper {
+    padding: 51px 128px !important;
+    justify-content: space-between;
+  }
+
+  .hero-section .right-image img {
+    translate: -4rem 0;
+  }
+
+  .hero-section .left {
+    max-width: 665px;
+  }
+
+  .hero-section h1.dekstop {
+    font-size: 64px;
+  }
+
+  .hero-section .divider {
+    translate: -2rem 0;
+  }
+  /* hero section end */
+
+  /* most popular destination & find visa section start */
+  .most-popular-destination .container {
+    max-width: 1620px;
+  }
+  /* most popular destination & find visa section end */
+
+  /* find visa section start */
+  .find-visa .container {
+    max-width: 1620px;
+  }
+  /* find visa section end */
+
+  /* Blog section start */
+  .blog .container {
+    max-width: 1620px;
+  }
+  /* Blog section end */
+
+  /* testimoni section start */
+  .testimoni .container {
+    max-width: 1335px;
+  }
+  /* testimoni section end */
+
+  /* footer start */
+  footer .container {
+    max-width: 1620px;
   }
   /* footer end */
 }
