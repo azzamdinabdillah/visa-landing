@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <nav class="bg-white shadow-sm">
+    <nav class="bg-white">
       <div class="top px-lg-5 gap-lg-5">
         <div
           class="d-none d-lg-block text-white"
@@ -141,7 +141,6 @@
         >
           <div
             class="col-12 left col-lg-6 mx-0 px-0 d-flex flex-column align-items-center align-items-lg-start"
-            style="gap: 25px"
           >
             <div class="d-flex gap-2 d-lg-none">
               <div
@@ -377,8 +376,16 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-5 mx-0 px-0 right-image">
+          <div class="col-12 col-lg-5 mx-0 px-0 right-image right d-lg-none d-xxl-block">
             <img src="./assets/images/hero-2.png" alt="" />
+          </div>
+
+          <div class="right tablet col-4 d-none d-lg-flex d-xxl-none">
+            <div class="main position-relative">
+              <img src="./assets/images/hero-3.png" alt="" class="position-relative">
+            </div>
+            <!-- <img src="./assets/images/hero-3-vector-left.png" alt="" class="vector left">
+            <img src="./assets/images/hero-3-vector-right.png" alt="" class="vector right"> -->
           </div>
         </div>
       </div>
@@ -404,7 +411,7 @@
           <div
             class="d-flex tab-links gap-5 overflow-auto justify-content-md-center"
           >
-            <p class="active">Most Popular</p>
+            <p>Most Popular</p>
             <p>On Arrival</p>
             <p>Travel Visa</p>
             <p>Work Visa</p>
@@ -628,7 +635,7 @@
           <div
             class="d-flex tab-links gap-5 overflow-auto justify-content-md-center"
           >
-            <p class="active">Europe</p>
+            <p>Europe</p>
             <p>Asia</p>
             <p>North America</p>
             <p>South America</p>
@@ -878,7 +885,7 @@
                 </div>
                 <div
                   class="carousel-item"
-                  data-img="./assets/images/blog-1.png"
+                  data-img="./assets/images/testimoni.png"
                 >
                   <div
                     class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
@@ -976,7 +983,7 @@
                 </div>
                 <div
                   class="carousel-item"
-                  data-img="./assets/images/blog-2.png"
+                  data-img="./assets/images/testimoni.png"
                 >
                   <div
                     class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
@@ -1074,7 +1081,7 @@
                 </div>
                 <div
                   class="carousel-item"
-                  data-img="./assets/images/blog-3.png"
+                  data-img="./assets/images/testimoni.png"
                 >
                   <div
                     class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
@@ -1172,7 +1179,7 @@
                 </div>
                 <div
                   class="carousel-item"
-                  data-img="./assets/images/destination-2.png"
+                  data-img="./assets/images/testimoni.png"
                 >
                   <div
                     class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
@@ -1270,7 +1277,7 @@
                 </div>
                 <div
                   class="carousel-item"
-                  data-img="./assets/images/destination-3.png"
+                  data-img="./assets/images/testimoni.png"
                 >
                   <div
                     class="p-4 testimoni-card border rounded-4 d-flex flex-column gap-2 gap-lg-5"
@@ -1823,7 +1830,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
+    <!-- <script>
+      // change image when tetimonial is change in carousel
       const mainImg = document.getElementById("mainTestimoniImage");
       const carousel = document.getElementById("carouselExampleIndicators-3");
 
@@ -1832,6 +1840,6 @@
         const newImg = activeItem.getAttribute("data-img");
         mainImg.src = newImg;
       });
-    </script>
+    </script> -->
   </body>
 </html>
