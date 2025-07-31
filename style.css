@@ -112,6 +112,10 @@ nav .bottom .call {
   gap: 25px;
 }
 
+.hero-section .container{
+  overflow: hidden;
+}
+
 .hero-section .container {
   background-image: url("/assets/images/her-bg.png");
   background-size: cover;
