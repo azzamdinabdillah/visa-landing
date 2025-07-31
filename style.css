@@ -112,7 +112,7 @@ nav .bottom .call {
   gap: 25px;
 }
 
-.hero-section .wrapper {
+.hero-section .container {
   background-image: url("/assets/images/her-bg.png");
   background-size: cover;
   background-position: center;
@@ -460,7 +460,7 @@ footer .copyright {
 
   /* Footer start */
   footer .container {
-    max-width: 95% !important;
+    max-width: 95%;
   }
   /* Footer end */
 }
@@ -475,6 +475,10 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  nav .container {
+    max-width: 100%;
   }
 
   nav .nav-link-wrapper {
@@ -513,7 +517,7 @@ footer .copyright {
   }
 
   /* Hero Section Start */
-  .hero-section .wrapper {
+  .hero-section .container {
     background-image: url("/assets/images/hero-bg-xl.png");
   }
 
@@ -810,6 +814,12 @@ footer .copyright {
 
 /* Responsive Desktop 2 */
 @media screen and (min-width: 1400px) {
+  /* navbar start */
+  nav .container {
+    max-width: 95%;
+  }
+  /* navbar end */
+
   /* hero section start */
   .hero-section .wrapper {
     padding: 51px 80px !important;
@@ -820,15 +830,20 @@ footer .copyright {
   }
 
   .hero-section .container {
-    max-width: 1440px;
+    max-width: 95%;
   }
 
   .hero-section .right-image img {
-    scale: 1.2;
-    translate: -3rem 0;
+    scale: 1.1;
+    translate: -1rem 0;
+    /* max-width: 818px; */
     /* max-width: 872px; */
     /* max-height: 551px; */
     /* 977 551 */
+  }
+
+  .hero-section .wrapper{
+    max-width: 1386px;
   }
 
   .hero-section .divider {
@@ -877,13 +892,33 @@ footer .copyright {
   }
 
   footer .container {
-    max-width: 1461px !important;
+    /* max-width: 1461px !important; */
+    max-width: 95%;
   }
   /* footer end */
 }
 
+@media screen and (min-width: 1500px) {
+  /* navbar start */
+  nav .top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav div:nth-child(3) div:nth-child(1) {
+    justify-content: flex-end;
+  }
+  /* navbar end */
+}
+
 /* Responsive Desktop 3 */
 @media screen and (min-width: 1920px) {
+  /* navbar start */
+  nav .container {
+    max-width: 1796px;
+  }
+  /* navbar end */
+
   /* hero section start */
   .hero-section .container {
     max-width: 1796px;
@@ -892,6 +927,7 @@ footer .copyright {
   .hero-section .wrapper {
     padding: 51px 128px !important;
     justify-content: space-between;
+    max-width: 1716px;
   }
 
   .hero-section .left {
@@ -942,7 +978,7 @@ footer .copyright {
 
   /* footer start */
   footer .container {
-    max-width: 1620px;
+    max-width: 1796px;
   }
   /* footer end */
 }
